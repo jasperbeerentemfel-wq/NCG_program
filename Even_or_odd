@@ -1,0 +1,8 @@
+while True:
+    def check_even_odd(n):
+    return ["even", "odd"][n % 2]
+        
+    number = int(input("Input a number: "))
+    result = check_even_odd(number)
+    print(f"The number {number} is {result}")
+
