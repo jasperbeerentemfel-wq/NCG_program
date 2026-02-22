@@ -6,6 +6,6 @@ words = ['hello', 'world', 'python', 'programming']
 anagrams = []
 
 for i, word in enumerate(words):
-    anagrams.append([str(words[i]), str(anagram(words[i])\n)])
+    anagrams.append([str(words[i]), str(anagram(words[i]))])
                                         
 print(anagrams)
