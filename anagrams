@@ -1,0 +1,11 @@
+def anagram(text: str):
+    return text[::-1]
+
+words = ['hello', 'world', 'python', 'programming']
+
+anagrams = []
+
+for i, word in enumerate(words):
+    anagrams.append([str(words[i]), str(anagram(words[i])\n)])
+                                        
+print(anagrams)
