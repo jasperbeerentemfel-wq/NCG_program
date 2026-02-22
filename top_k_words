@@ -1,0 +1,9 @@
+from collections import Counter
+
+def top_k_words(text: str, k: int): 
+    words = text.lower().split()
+    word_counts = Counter(words)
+    return word_counts.most_common(k)
+
+text = "The cat in the hat sat on the mat"
+print(top_k_words(text, 3))
