@@ -1,1 +1,13 @@
-print('test')
+res = []
+
+input_string = str(input("Enter a string of numbers separated by spaces: "))
+print(input_string)
+
+for x in input_string.replace(',', ' ').split():
+        num = int(x) 
+        res.append(num)
+sum = 0
+for i in range(len(res)):
+    sum += int(res[i])
+
+print(sum)
