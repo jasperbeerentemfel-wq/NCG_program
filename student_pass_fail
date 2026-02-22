@@ -1,0 +1,6 @@
+def check_score(score):
+    result = {True: "Pass", False: "Fail"}
+    return result[score >= 50]
+
+score =  int(input("Enter the student's score: "))
+print(str(check_score(score)))
