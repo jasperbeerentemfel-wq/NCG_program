@@ -1,0 +1,11 @@
+import random
+from retrying import retry
+
+@retry(
+    exceptions=Exception,  # Exception type(s) to catch and retry
+    tries=3,               # Total number of attempts (including first)
+    delay=1,               # Initial delay between retries (seconds)
+    max_delay=None,        # Maximum delay between retries
+    backoff=1,             
+)
+
